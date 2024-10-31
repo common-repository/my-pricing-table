@@ -1,0 +1,115 @@
+.bppt_table3 {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: stretch;
+}
+.pricingTable {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  min-width: 300px;
+  width: calc(100% / 3 - 40px);
+  margin: 0 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+.pricingTable .pricingTable-header {
+  background: #fff;
+  padding: 30px 20px;
+}
+.pricingTable .title {
+  color: #34ca95;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0;
+}
+.pricingTable .price-value {
+  color: #fff;
+  background: linear-gradient(#2cc550, #35c296);
+  padding: 20px 0;
+  margin: 0;
+}
+.pricingTable .price-value .amount {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 50px;
+  display: block;
+}
+.pricingTable .price-value .duration {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: block;
+}
+.pricingTable .pricing-content {
+  background-color: #fff;
+  padding: 30px 20px 12px;
+}
+.pricingTable .pricing-content ul {
+  padding: 0;
+  margin: 0 0 30px;
+  list-style: none;
+}
+.pricingTable .pricing-content ul li {
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin: 0 0 15px;
+}
+.pricingTable .pricing-content ul li:last-child {
+  margin-bottom: 0;
+}
+/* Sign UP */
+.pricingTable-signup {
+  margin-top: auto;
+  margin-bottom: 45px;
+}
+.pricingTable .pricingTable-signup a {
+  color: #fff;
+  background: linear-gradient(#2cc550, #35c296);
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 7px 30px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+.pricingTable .pricingTable-signup a:hover {
+  text-shadow: -4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 5px rgba(0, 0, 0, 0.2);
+}
+/* purple */
+.pricingTable.purple .title {
+  color: #945ad2;
+}
+.pricingTable.purple .price-value,
+.pricingTable.purple .pricingTable-signup a {
+  background: linear-gradient(#654caf, #945ad2);
+}
+
+/* pink */
+.pricingTable.pink .title {
+  color: #d55a6f;
+}
+.pricingTable.pink .price-value,
+.pricingTable.pink .pricingTable-signup a {
+  background: linear-gradient(#ca3173, #d55a6f);
+}
+@media only screen and (min-width: 992px) {
+  .pricingTable {
+    min-width: 273px;
+    margin: 0 20px 40px 20px;
+    width: calc(100% / 3 - 40px);
+  }
+}

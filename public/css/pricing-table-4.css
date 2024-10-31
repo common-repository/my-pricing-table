@@ -1,0 +1,230 @@
+html {
+  scroll-behavior: smooth;
+}
+.priceTableBGBefore.columns-1 .pricingTable {
+  width: 100%;
+}
+.priceTableBGBefore.columns-2 .pricingTable {
+  width: 50%;
+}
+.priceTableBGBefore.columns-3 .pricingTable {
+  width: 33.33%;
+}
+.priceTableBGBefore.columns-4 .pricingTable {
+  width: 25%;
+}
+.priceTableBGBefore.columns-5 .pricingTable {
+  width: 20%;
+}
+.priceTableBGBefore.columns-6 .pricingTable {
+  width: 16.66%;
+}
+@media (max-width: 768px) {
+  .priceTableBGBefore.columns-tablet-1 .pricingTable {
+    width: 100%;
+  }
+  .priceTableBGBefore.columns-tablet-2 .pricingTable {
+    width: 50%;
+  }
+  .priceTableBGBefore.columns-tablet-3 .pricingTable {
+    width: 33.33%;
+  }
+  .priceTableBGBefore.columns-tablet-4 .pricingTable {
+    width: 25%;
+  }
+}
+@media (max-width: 576px) {
+  .priceTableBGBefore.columns-mobile-1 .pricingTable {
+    width: 100%;
+  }
+  .priceTableBGBefore.columns-mobile-2 .pricingTable {
+    width: 50%;
+  }
+}
+.priceTableBGBefore {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.priceTableBGBefore .pricingTable {
+  color: #383e4a;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  padding: 0 30px 30px 30px;
+  position: relative;
+  z-index: 1;
+  min-width: 300px;
+  margin-bottom: 40px;
+}
+.priceTableBGBefore .pricingTable:before {
+  content: "";
+  width: 250px;
+  max-width: 85%;
+  height: 350px;
+  border-radius: 10px 10px 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.priceTableBGBefore .pricingTable .pricingContent {
+  height: 100%;
+  max-width: 370px;
+  background-color: #fff;
+  padding: 35px 15px 30px 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1), 10px -10px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.priceTableBGBefore .pricingTable .pricingContent ul.pricingFeatures {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: inline-block;
+}
+.priceTableBGBefore .pricingTable .pricingContent ul.pricingFeatures li {
+  color: #999;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 8px 0 8px 35px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.priceTableBGBefore
+  .pricingTable
+  .pricingContent
+  ul.pricingFeatures
+  li:first-child {
+  border-top: 1px solid #ccc;
+}
+.priceTableBGBefore .pricingTable .pricingContent ul.pricingFeatures li:before {
+  content: "\2714";
+  position: absolute;
+  color: #6cc13d;
+  font-size: 20px;
+  font-weight: 900;
+  top: 8px;
+  left: 0;
+}
+.priceTableBGBefore
+  .pricingTable
+  .pricingContent
+  ul.pricingFeatures
+  li.disable:before {
+  content: "\2716";
+  color: #525963;
+}
+.priceTableBGBefore .pricingTable .pricingHeader .title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+.priceTableBGBefore .pricingTable .pricingValue {
+  margin: 0 0 25px 0;
+}
+.priceTableBGBefore .pricingTable .pricingValue .amount {
+  font-size: 50px;
+  line-height: 50px;
+  display: block;
+}
+.priceTableBGBefore .pricingTable .pricingValue .duration {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  display: block;
+}
+.priceTableBGBefore .pricingTable .pricingSignUp a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 14px 15px;
+  transition: all 0.5s ease 0s;
+  border-radius: 6px;
+}
+.priceTableBGBefore .pricingTable .pricingSignUp a:hover {
+  text-decoration: none;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+.priceTableBGBefore .pricingTable .pricingSignUp a,
+.priceTableBGBefore .pricingTable:before {
+  background: linear-gradient(to right, #9fcd37, #72bb43);
+}
+.priceTableBGBefore .pricingTable.purple .pricingSignUp a,
+.priceTableBGBefore .pricingTable.purple:before {
+  background: linear-gradient(to right, #c95799, #9f54ab);
+}
+.priceTableBGBefore
+  .pricingTable.purple
+  .pricingContent
+  ul.pricingFeatures
+  li:before {
+  color: #c95799;
+}
+.priceTableBGBefore
+  .pricingTable.purple
+  .pricingContent
+  ul.pricingFeatures
+  li.disable:before {
+  color: #525963;
+}
+.priceTableBGBefore .pricingTable.orange .pricingSignUp a,
+.priceTableBGBefore .pricingTable.orange:before {
+  background: linear-gradient(to right, #f0891f, #da382a);
+}
+.priceTableBGBefore
+  .pricingTable.orange
+  .pricingContent
+  ul.pricingFeatures
+  li:before {
+  color: #f0891f;
+}
+.priceTableBGBefore
+  .pricingTable.orange
+  .pricingContent
+  ul.pricingFeatures
+  li.disable:before {
+  color: #525963;
+}
+@media screen and (min-width: 769px) and (max-width: 992px),
+  (min-width: 577px) and (max-width: 700px),
+  (max-width: 300px) {
+  .priceTableBGBefore .pricingTable .pricingContent {
+    padding: 15px 10px 25px 10px;
+  }
+  .priceTableBGBefore .pricingTable .pricingHeader .title {
+    font-size: 25px;
+    margin: 0 0 15px 0;
+  }
+  .priceTableBGBefore .pricingTable .pricingContent ul.pricingFeatures {
+    margin: 0 0 20px 0;
+  }
+  .priceTableBGBefore .pricingTable .pricingContent ul.pricingFeatures li {
+    font-size: 15px;
+  }
+  .priceTableBGBefore .pricingTable .pricingValue .amount {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .priceTableBGBefore .pricingTable .pricingSignUp a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .priceTableBGBefore {
+    max-width: 400px;
+    width: 100%;
+  }
+}

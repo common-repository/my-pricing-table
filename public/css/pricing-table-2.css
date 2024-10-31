@@ -1,0 +1,242 @@
+.bppt_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+}
+.pricingTable {
+  background-color: #f1f1f1;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  width: 280px;
+  margin: 0 24px 60px 24px;
+  position: relative;
+  z-index: 1;
+}
+.pricingTable:before,
+.pricingTable:after {
+  content: "";
+  background: linear-gradient(to left bottom, #a10903 45%, transparent 50%);
+  height: 40px;
+  width: 15px;
+  position: absolute;
+  top: 50px;
+  left: -15px;
+  z-index: -1;
+}
+.pricingTable:after {
+  transform: rotateY(180deg);
+  left: auto;
+  right: -15px;
+}
+.pricingTable .pricingTable-header {
+  color: #fff;
+  background: #f53c25;
+  padding: 15px 0 25px;
+  margin: 0 -15px;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+}
+.pricingTable .title {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pricingTable .price-value {
+  color: #000;
+  font-size: 69px;
+  font-weight: 500;
+  border-bottom: 2px solid #999;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  width: 53%;
+}
+.pricingTable .price-value > span {
+  position: absolute;
+  bottom: 3px;
+  right: 4px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  font-weight: 400;
+}
+.pricingTable .pricing-content {
+  padding: 20px 0;
+  margin: 0 -13px;
+  border-right: 15px solid #f53c25;
+  border-left: 15px solid #f53c25;
+  margin-bottom: 50px;
+}
+.pricingTable .pricing-content ul {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+.pricingTable .pricing-content li {
+  color: #404040;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 40px;
+  padding-left: 15px;
+  position: relative;
+}
+.pricingTable .pricing-content li:before {
+  content: "";
+  background: #f53c25;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.pricingTable-signup {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.pricingTable .pricingTable-signup a {
+  color: #fff;
+  background: #f53c25;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  display: inline-block;
+  position: relative;
+  bottom: -28px;
+  transition: all 0.3s;
+}
+.pricingTable .pricingTable-signup a:hover {
+  background: #a10903;
+  text-shadow: 0 0 5px #000;
+}
+.pricingTable .pricingTable-signup a:before,
+.pricingTable .pricingTable-signup a:after {
+  content: "";
+  background: linear-gradient(to left bottom, #a10903 48%, transparent 50%);
+  height: 50%;
+  width: 25%;
+  position: absolute;
+  left: -25%;
+  bottom: 0;
+  z-index: -1;
+}
+.pricingTable .pricingTable-signup a:after {
+  transform: rotateY(180deg);
+  left: auto;
+  right: -25%;
+}
+.pricingTable.pink:before,
+.pricingTable.pink:after {
+  background: linear-gradient(to left bottom, #c51162 45%, transparent 50%);
+}
+.pricingTable.pink .pricingTable-header {
+  background: #f50057;
+}
+.pricingTable.pink .pricing-content {
+  border-color: #f50057;
+}
+.pricingTable.pink .pricing-content li:before,
+.pricingTable.pink .pricingTable-signup a {
+  background: #f50057;
+}
+.pricingTable.pink .pricingTable-signup a:before,
+.pricingTable.pink .pricingTable-signup a:after {
+  background: linear-gradient(to left bottom, #c51162 48%, transparent 50%);
+}
+.pricingTable.pink .pricingTable-signup a:hover {
+  background: #c51162;
+}
+
+.pricingTable.purple:before,
+.pricingTable.purple:after {
+  background: linear-gradient(to left bottom, #512da8 45%, transparent 50%);
+}
+.pricingTable.purple .pricingTable-header {
+  background: #8e44ad;
+}
+.pricingTable.purple .pricing-content {
+  border-color: #8e44ad;
+}
+.pricingTable.purple .pricing-content li:before,
+.pricingTable.purple .pricingTable-signup a {
+  background: #8e44ad;
+}
+.pricingTable.purple .pricingTable-signup a:before,
+.pricingTable.purple .pricingTable-signup a:after {
+  background: linear-gradient(to left bottom, #512da8 48%, transparent 50%);
+}
+.pricingTable.purple .pricingTable-signup a:hover {
+  background: #512da8;
+}
+
+/* skycolor */
+.pricingTable.sky:before,
+.pricingTable.sky:after {
+  background: linear-gradient(to left bottom, #2bcbba 45%, transparent 50%);
+}
+.pricingTable.sky .pricingTable-header {
+  background: #2bcbba;
+}
+.pricingTable.sky .pricing-content {
+  border-color: #2bcbba;
+}
+
+.pricingTable.sky .pricing-content li:before,
+.pricingTable.sky .pricingTable-signup a {
+  background: #2bcbba;
+}
+.pricingTable.sky .pricingTable-signup a:before,
+.pricingTable.sky .pricingTable-signup a:after {
+  background: linear-gradient(to left bottom, #2bcbba 48%, transparent 50%);
+}
+.pricingTable.sky .pricingTable-signup a:hover {
+  background: #0fb9b1;
+}
+/* Lemon */
+.pricingTable.lemon:before,
+.pricingTable.lemon:after {
+  background: linear-gradient(to left bottom, #4cd137 45%, transparent 50%);
+}
+.pricingTable.lemon .pricingTable-header {
+  background: #4cd137;
+}
+.pricingTable.lemon .pricing-content {
+  border-color: #4cd137;
+}
+.pricingTable.lemon .pricing-content li:before,
+.pricingTable.lemon .pricingTable-signup a {
+  background: #4cd137;
+}
+.pricingTable.lemon .pricingTable-signup a:before,
+.pricingTable.lemon .pricingTable-signup a:after {
+  background: linear-gradient(to left bottom, #4cd137 48%, transparent 50%);
+}
+.pricingTable.lemon .pricingTable-signup a:hover {
+  background: #44bd32;
+}
+
+@media only screen and (min-width: 922px) {
+  .pricingTable {
+    margin: 0 auto 60px;
+    min-width: 270px;
+    width: calc(100% / 3 - 58px);
+    margin: 0 29px 70px 29px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .pricingTable {
+    margin: 0 auto 60px;
+    width: 280px;
+  }
+}

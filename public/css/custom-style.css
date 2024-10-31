@@ -1,0 +1,35 @@
+.shortcode_gen {
+  margin-top: 20px;
+}
+.shortcode_gen label {
+  cursor: pointer;
+  font-size: 16px;
+  font-style: italic;
+}
+.shortcode_gen span {
+  display: block;
+  margin: 5px 0;
+  background: #1e8cbe;
+}
+.shortcode_gen input[type="text"] {
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  padding: 4px 8px;
+  width: 100%;
+  background: 0 0;
+  color: #fff;
+}
+.pt_item_check {
+  background: inherit;
+  position: relative;
+}
+.pt_item_check .csf-desc-text {
+  float: left;
+  width: 68%;
+  font-weight: 400;
+  position: absolute;
+  top: 12px;
+  left: 32%;
+  overflow: hidden;
+}

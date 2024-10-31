@@ -1,0 +1,230 @@
+html {
+  scroll-behavior: smooth;
+}
+.priceTableGradient.columns-1 .pricingTable {
+  width: calc(100% - 30px);
+  margin: 0 15px 30px 15px;
+}
+.priceTableGradient.columns-2 .pricingTable {
+  width: calc(50% - 30px);
+  margin: 0 15px 30px 15px;
+}
+.priceTableGradient.columns-3 .pricingTable {
+  width: calc(33.33% - 30px);
+  margin: 0 15px 30px 15px;
+}
+.priceTableGradient.columns-4 .pricingTable {
+  width: calc(25% - 30px);
+  margin: 0 15px 30px 15px;
+}
+.priceTableGradient.columns-5 .pricingTable {
+  width: calc(20% - 30px);
+  margin: 0 15px 30px 15px;
+}
+.priceTableGradient.columns-6 .pricingTable {
+  width: calc(16.66% - 30px);
+  margin: 0 15px 30px 15px;
+}
+@media (max-width: 768px) {
+  .priceTableGradient.columns-tablet-1 .pricingTable {
+    width: calc(100% - 20px);
+    margin: 0 10px 30px 10px;
+  }
+  .priceTableGradient.columns-tablet-2 .pricingTable {
+    width: calc(50% - 20px);
+    margin: 0 10px 30px 10px;
+  }
+  .priceTableGradient.columns-tablet-3 .pricingTable {
+    width: calc(33.33% - 20px);
+    margin: 0 10px 30px 10px;
+  }
+  .priceTableGradient.columns-tablet-4 .pricingTable {
+    width: calc(25% - 20px);
+    margin: 0 10px 30px 10px;
+  }
+}
+@media (max-width: 576px) {
+  .priceTableGradient.columns-mobile-1 .pricingTable {
+    width: calc(100% - 10px);
+    margin: 0 5px 30px 5px;
+  }
+  .priceTableGradient.columns-mobile-2 .pricingTable {
+    width: calc(50% - 10px);
+    margin: 0 5px 30px 5px;
+  }
+}
+.priceTableGradient {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.priceTableGradient .pricingTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  padding: 20px 0 35px 0;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.3);
+  max-width: 380px;
+  min-width: 270px;
+}
+.priceTableGradient .pricingTable .pricingHeader {
+  background: linear-gradient(
+    to right,
+    #f37a21,
+    #f5b259 20px,
+    #f5b259 13px,
+    #f37a21 38px,
+    #f37a21 40%,
+    #f8931f 60%
+  );
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 0 7px;
+  margin: 0 20px 20px 0;
+  clip-path: polygon(0 0, 0 100%, 85% 100%, 100% 50%, 85% 0);
+}
+.priceTableGradient .pricingTable .pricingHeader .title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 65px;
+  margin: 0;
+}
+.priceTableGradient .pricingTable .pricingValue {
+  color: #000;
+  padding: 0 15px;
+  margin: 0 0 20px;
+}
+.priceTableGradient .pricingTable .pricingValue .amount {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.priceTableGradient .pricingTable .pricingValue .duration {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+.priceTableGradient .pricingTable .pricingFeatures {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  padding: 25px 15px;
+  margin: 0 0 30px;
+  border: 1px solid #e7e7e7;
+  border-left: none;
+  border-right: none;
+}
+.priceTableGradient .pricingTable .pricingFeatures li {
+  color: #777;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  padding: 0 0 0 40px;
+  margin: 0 0 12px;
+  position: relative;
+}
+.priceTableGradient .pricingTable .pricingFeatures li:last-child {
+  margin-bottom: 0;
+}
+.priceTableGradient .pricingTable .pricingFeatures li:before {
+  content: "\2714";
+  color: #fff;
+  background: #f89923;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 24px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.priceTableGradient .pricingTable .pricingFeatures li.disable:before {
+  content: "\2716";
+}
+.priceTableGradient .pricingTable .pricingSignUp a {
+  color: #fff;
+  background: linear-gradient(#faaf3c, #f89923);
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 200px;
+  padding: 8px 6px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.priceTableGradient .pricingTable .pricingSignUp a:hover {
+  text-decoration: none;
+  text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.15);
+}
+.priceTableGradient .pricingTable.green .pricingHeader {
+  background: linear-gradient(
+    to right,
+    #8dc53c,
+    #e1e530 20px,
+    #e1e530 13px,
+    #8dc53c 38px,
+    #8dc53c 40%,
+    #9bbf3b 60%
+  );
+}
+.priceTableGradient .pricingTable.green .pricingFeatures li:before {
+  background: #54a445;
+}
+.priceTableGradient .pricingTable.green .pricingSignUp a {
+  background: linear-gradient(#72bc4b, #54a445);
+}
+.priceTableGradient .pricingTable.blue .pricingHeader {
+  background: linear-gradient(
+    to right,
+    #30a6cc,
+    #84d6ee 20px,
+    #84d6ee 13px,
+    #30a6cc 38px,
+    #30a6cc 40%,
+    #4db5dc 60%
+  );
+}
+.priceTableGradient .pricingTable.blue .pricingFeatures li:before {
+  background: #1098cc;
+}
+.priceTableGradient .pricingTable.blue .pricingSignUp a {
+  background: linear-gradient(#41b1d9, #1098cc);
+}
+.priceTableGradient .pricingTable .pricingFeatures li.disable:before {
+  background: #ed1925;
+}
+@media screen and (min-width: 769px) and (max-width: 992px),
+  (min-width: 577px) and (max-width: 700px),
+  (max-width: 300px) {
+  .priceTableGradient .pricingTable .pricingHeader .title {
+    font-size: 28px;
+  }
+  .priceTableGradient .pricingTable .pricingValue .amount {
+    font-size: 35px;
+  }
+  .priceTableGradient .pricingTable .pricingValue .duration {
+    font-size: 25px;
+  }
+  .priceTableGradient .pricingTable .pricingFeatures li {
+    font-size: 15px;
+  }
+  .priceTableGradient .pricingTable .pricingSignUp a {
+    font-size: 18px;
+  }
+}
